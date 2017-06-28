@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+</head>
+<body>
+
+
+<div class="col-md-4"></div>
+
+<div class="col-md-4 m-t-60">
+	<form action="" method="POST" role="form">
+		<div class="form-group">
+			<label for="">Title</label>
+			<input type="text" class="form-control" id="" placeholder="title">
+		</div>
+		<div class="form-group">
+			<label for="">Description</label>
+			<textarea name="" id="input" class="form-control" rows="3" required="required" placeholder="Describe your post"></textarea>
+		</div>
+	
+	<div class="row">
+		<div class="col-md-6">
+			<p>Tag post category</p>
+		</div>
+		
+		<div class="col-md-6">
+			<p class="pull-right">Upload image for post<span class="c-grey"> (optional)</span></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<select name="" id="input" class="form-control" required="required">
+				<option>Select tag</option>
+				<option value="">Health</option>
+				<option value="">Fintech</option>
+				<option value="">Agro</option>
+				<option value="">Education</option>
+				<option value="">E-commerce</option>
+				<option value="">Virtual reality</option>
+				<option value="">Artificial Intelligence</option>
+			</select>
+		</div>
+		<div class="col-md-6">
+			<div class="picture" style="float: right;">
+		    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAhRsMOMIvyfi-rD07o9Fa6DzkaeahYPqYu_KWfNtW1ShsxGxa"
+		    class="picture_src" id="picture_preview" alt="" >
+			<input class="img_container" type="file" id="upload" name="file">
+			</div>
+			<!-- <span class="btn btn-success fileinput-button pull-right">
+		        <span>Browse</span>
+
+		    <input type="file" name="file">
+		    </span> -->
+		</div>
+	</div>
+
+	<div class="col-md-7"></div>
+	<div class="col-md-5">
+	<button type="button" class="no-bd bg-white c-grey">Cancel</button>
+	<button type="button" class="btn bg-red c-white">Create</button>
+	</div>
+	</form>
+</div>
+
+<div class="col-md-4"></div>
+
+<script src="assets/js/jquery-3.1.1.min.js"></script>
+
+<script src="assets/js/bootstrap.min.js"></script>
+
+
+
+ <!-- <script type="text/javascript">$('[data-toggle="popover"]').popover();</script> -->
+
+
+
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript">
+
+    
+        $("[data-toggle=popover]").popover({
+    html: true, 
+    content: function() {
+          return $('#popover-content').html();
+        }
+});
+
+
+ 		app.imageHandler();
+      	apps.imageHandler();
+      	appz.imageHandler();
+
+
+        // scroll to top functions
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+            document.documentElement.scrollTop = 0; // For IE and Firefox
+        }
+        function myClicked(){
+        	document.getElementById('open').style.display ="block";
+        }
+        function myRemove(){
+        	document.getElementById('open').style.display ="none";
+     
+        }
+        function myMessage(){
+        	$('#edit').modal("hide");
+        	var change = document.getElementById('replace').textContent;
+        	var msg = document.getElementById('msgs');
+        	msg.innerHTML = change.text;
+        	msg.textContent = change;
+
+
+        }
+    </script>
+</body>
+</html>
+						
