@@ -72,7 +72,7 @@
 		<div class="container nav2">
 			<nav class="navbar">
 			  <ul class="nav navbar-nav">
-			    <li class="active w-600"><a href="index.html">ALL</a></li>
+			    <li class="act w-600"><a href="index.html">ALL</a></li>
 			    <li class="act w-600 p-l-30"><a href="health.html">HEALTH</a></li>
 			    <li class="act w-600 p-l-30"><a href="fintech.html">FINTECH</a></li>
 			    <li class="act w-600 p-l-30"><a href="agro.html">AGRO</a></li>
@@ -108,15 +108,15 @@
 				  <button class="btn bg-red c-white dropdown-toggle" type="button" data-toggle="dropdown">Create a Topic
 				  <span class="caret"></span></button>
 				  <ul class="dropdown-menu">
-				    <li><a class="btn" data-toggle="modal" href='#post'>Create a Post</a></li>
+				    <li><a class="btn" href='topic.html'>Create a Post</a></li>
 				    <li class="divider"></li>
-				    <li><a class="btn" data-toggle="modal" href='#poll'>Create a Poll</a></li>
+				    <li><a class="btn" href='poll.html'>Create a Poll</a></li>
 				  </ul>
 				</div>
 			</div>
 
 			<!-- moder for topic -->
-			<div class="modal fade" id="post">
+			<!-- <div class="modal fade" id="post">
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
@@ -166,7 +166,7 @@
 								        <span>Browse</span>
 
 								    <input type="file" name="file">
-								    </span> -->
+								    </span> 
 								</div>
 							</div>
 						</div>
@@ -177,9 +177,9 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!-- moder for poll -->
-			<div class="modal fade" id="poll">
+			<!-- <div class="modal fade" id="poll">
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
@@ -283,7 +283,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!-- end -->
 			<div class="col-md-8"></div>
 			<div class="col-md-2 col-xs-6">
@@ -501,11 +501,14 @@
 								<p>  
 								<span class="c-red m-l-58 mm-l-0 f-12">14 Likes</span>
 	                            <span class=" p-l-15 f-12">3 Dislike</span>
-	                            <span class=" p-l-20 f-12"> 3 Comments</span></p>
+	                            <span class=" p-l-20 f-12"> 3 Comments</span>
+	                            <button class="btn bg-red c-white pull-right m-b-10" id="reply">Reply</button>
+	                            <textarea type="text" name="" placeholder="Reply" class="form-control h-40 m-t-10 rep" style="display: none;"></textarea> 
 							</div>
+
 						</div>
 						
-						<div class="row bg-gray">
+						<!-- <div class="row bg-gray">
 							<div class="col-md-2 col-xs-2">
 								<img src="assets/img/imgs/robotic.jpg" class="img-circle bd-30 img-responsive m-t-5" height="50" width="50">
 							</div>
@@ -530,7 +533,8 @@
 	                            
 	                            
 							</div>
-						</div>
+						</div> -->
+						
 
 					</div>
 					<div class="col-md-2">
@@ -564,12 +568,11 @@
     <script type="text/javascript">
 
     
-        $("[data-toggle=popover]").popover({
-    html: true, 
-    content: function() {
-          return $('#popover-content').html();
-        }
-});
+    
+      $("#reply").click(function(){
+        $(".rep").fadeToggle();
+      });
+
 
 
  		app.imageHandler();
