@@ -166,5 +166,15 @@ p,h1,h2,h3,h4,h5,h6,div,a{
   }
   .mwidth-200{width: 200px!important;}
 
+  .mm-l-35{margin-left: 35px!important;}
+  .mm-l-44{margin-left: 44px!important;}
   .mm-l-50{margin-left: 50px!important;}
+  .mm-l-80{margin-left: 80px!important;}
+  .mm-l-121 {margin-left:121px !important;}
+
+   .mp-r-0{padding-right:0px !important;}
+   .mp-l-0{padding-left:0px !important;}
+
+    .mf-10{font-size:10px !important;}
+    .mf-11{font-size:11px !important;}
 }

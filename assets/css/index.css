@@ -455,6 +455,12 @@ input[type=file]:focus, input[type=checkbox]:focus, input[type=radio]:focus {
    }
 
 
+@media only screen and (max-width: 320px){
+  .mm-l-_10 {margin-left:-10px !important;}
+
+  .mwidth-16{width:16px !important;}
+
+}
 
 
 @media only screen and (max-width: 575px){
@@ -490,6 +496,7 @@ input[type=file]:focus, input[type=checkbox]:focus, input[type=radio]:focus {
 
   .mp-r-0{padding-right:0px !important;}
 
+  
    .mwidth-30{width:30px !important;}
     .mwidth-40{width:40px !important;}
   .mwidth-70{width:70px !important;}
@@ -512,6 +519,7 @@ input[type=file]:focus, input[type=checkbox]:focus, input[type=radio]:focus {
   .mh-100p { height:100% !important; }
   .mw-600{font-weight:600 !important;}
   .mw-700{font-weight:700 !important;}
+
 
   .mm-l-_50 {margin-left:-50px !important;}
 }

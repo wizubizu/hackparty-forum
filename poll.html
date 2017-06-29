@@ -14,106 +14,106 @@
 <body>
 
 
-<div class="col-md-4"></div>
+		<div class="col-md-4"></div>
 
-<div class="col-md-4 m-t-60">
-	<form action="" method="POST" role="form">
-		<div class="form-group">
-			<label for="">Title</label>
-			<textarea name="" id="input" class="form-control" rows="3" required="required" placeholder="Enter poll title"></textarea>
-		</div>
-		<p>Choose poll <span>(min. 2, max. 3)</span></p>
-		<div class="row">
-			
-			<div class="col-md-10">
+		<div class="col-md-4 m-t-60 bs">
+			<div class="m-t-10">
+			<form action="" method="POST" role="form">
 				<div class="form-group">
-					<input type="text" class="form-control" id="" placeholder="Enter option">
+					<label for="">Title</label>
+					<textarea name="" id="input" class="form-control" rows="3" required="required" placeholder="Enter poll title"></textarea>
 				</div>
-			</div>
-			<div class="col-md-2">
-				<div class="radio">
-				<label id="" style="cursor: default;">
-				  
-				</label>
-				</div>
-			</div>
-
-			<div class="col-md-10">
-				<div class="form-group">
-					<input type="text" class="form-control" id="" placeholder="Enter option">
-				</div>
-			</div>
-			<div class="col-md-2">
-				<div class="radio">
-				  <label id="" style="cursor: pointer; "  onclick="myClicked()">
-				  	<center>
-				  		<i class="fa fa-plus " style="color: black ; margin-left: -25px;" ></i>	
-				  	</center>
-				  	
-				  </label>
-				</div>
-			</div>
-
-			<div class=" open" id="open" style="display: none; transition: all 1s ease-in; animation: ease; animation-delay: 2s;">
-			<div class="col-md-10">
-				<div class="form-group">
-					<input type="text" class="form-control" id="" placeholder="Enter option">
-					  
+				<p>Choose poll <span>(min. 2, max. 3)</span></p>
+				<div class="row">
 					
+					<div class="col-md-10">
+						<div class="form-group">
+							<input type="text" class="form-control" id="" placeholder="Enter option">
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="radio">
+						<label id="" style="cursor: default;">
+						  
+						</label>
+						</div>
+					</div>
+
+					<div class="col-md-10">
+						<div class="form-group">
+							<input type="text" class="form-control" id="" placeholder="Enter option">
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="radio">
+						  <label id="" style="cursor: pointer; "  onclick="myClicked()">
+						  	<center>
+						  		<i class="fa fa-plus " style="color: black ; margin-left: -25px;" ></i>	
+						  	</center>
+						  	
+						  </label>
+						</div>
+					</div>
+
+					<div class=" open" id="open" style="display: none; transition: all 1s ease-in; animation: ease; animation-delay: 2s;">
+						<div class="col-md-10">
+							<div class="form-group">
+								<input type="text" class="form-control" id="" placeholder="Enter option">
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="radio">
+								<label id="" style="cursor: pointer; "  onclick="myRemove()">
+								  	<i class="fa fa-times " style="color:black ; margin-left: -20px;" ></i>
+								  </label>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-2">
-				<div class="radio">
-					<label id="" style="cursor: pointer; "  onclick="myRemove()">
-					  	<i class="fa fa-times " style="color:black ; margin-left: -20px;" ></i>
-					  </label>
+
+				
+				<div class="row">
+					<div class="col-md-6">
+						<p>Tag post to category</p>
+					</div>
+					
+					<div class="col-md-6">
+						<p class="pull-right">Upload image for post<span class="c-grey"> (optional)</span></p>
+					</div>
 				</div>
-			</div>
+				<div class="row">
+					<div class="col-md-6">
+						<select name="" id="input" class="form-control" required="required">
+							<option>Select tag</option>
+							<option value="">Health</option>
+							<option value="">Fintech</option>
+							<option value="">Agro</option>
+							<option value="">Education</option>
+							<option value="">E-commerce</option>
+							<option value="">Virtual reality</option>
+							<option value="">Artificial Intelligence</option>
+						</select>
+					</div>
+					<div class="col-md-6">
+						<div class="picture" style="float: right;">
+						    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAhRsMOMIvyfi-rD07o9Fa6DzkaeahYPqYu_KWfNtW1ShsxGxa"
+						    class="picture_src" id="picture_preview1" alt="" >
+							<input class="img_container" type="file" id="upload1" name="file">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-7 "></div>
+				<div class="col-md-5 m-t-10 m-b-10">
+					<button type="button" class="no-bd bg-white c-grey">Cancel</button>
+					<button type="button" class="btn bg-red c-white">Create</button>
+				</div>
+
+			</form>
 			</div>
 		</div>
 
-		
-		<div class="row">
-			<div class="col-md-6">
-				<p>Tag post to category</p>
-			</div>
-			
-			<div class="col-md-6">
-				<p class="pull-right">Upload image for post<span class="c-grey"> (optional)</span></p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<select name="" id="input" class="form-control" required="required">
-					<option>Select tag</option>
-					<option value="">Health</option>
-					<option value="">Fintech</option>
-					<option value="">Agro</option>
-					<option value="">Education</option>
-					<option value="">E-commerce</option>
-					<option value="">Virtual reality</option>
-					<option value="">Artificial Intelligence</option>
-				</select>
-			</div>
-			<div class="col-md-6">
-			<div class="picture" style="float: right;">
-			    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAhRsMOMIvyfi-rD07o9Fa6DzkaeahYPqYu_KWfNtW1ShsxGxa"
-			    class="picture_src" id="picture_preview1" alt="" >
-			<input class="img_container" type="file" id="upload1" name="file">
-			</div>
-			</div>
-		</div>
-
-		<div class="col-md-7 "></div>
-		<div class="col-md-5 m-t-10">
-		<button type="button" class="no-bd bg-white c-grey">Cancel</button>
-		<button type="button" class="btn bg-red c-white">Create</button>
-		</div>
-
-	</form>
-</div>
-
-<div class="col-md-4"></div>
+		<div class="col-md-4"></div>
 
 <script src="assets/js/jquery-3.1.1.min.js"></script>
 
